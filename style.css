@@ -1,0 +1,118 @@
+@font-face {
+    font-family: 'MyCustomFont';
+    src: url('mycustomfont.woff2') format('woff2'),
+         url('mycustomfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+body {
+    font-family: 'Segoe UI', sans-serif;
+}
+
+.user-input-section {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 30px;
+}
+
+.heading {
+    width: 100%;
+    text-align: center;
+}
+
+.title {
+    font-size: 36px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.sub-title {
+    font-size: 18px;
+    color: gray;
+    margin-bottom: 20px;
+}
+
+.user-input {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+}
+
+input[type="text"] {
+    width: 70%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    border: 2px solid #ccc;
+    border-radius: 4px;
+}
+
+.button {
+    width: 20%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.qr-code-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.qr-code {
+    margin-bottom: 20px;
+}
+
+.download-button-container {
+    display: flex;
+    align-items: center;
+}
+
+.download-button {
+    padding: 10px 20px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+@media screen and (max-width: 600px) {
+    .user-input-section {
+        width: 90%;
+    }
+
+    .user-input {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    input[type="text"] {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    .button {
+        width: 100%;
+    }
+
+    .qr-code {
+        width: 100%;
+        height: auto;
+    }
+
+    .download-button {
+        width: 100%;
+    }
+}
