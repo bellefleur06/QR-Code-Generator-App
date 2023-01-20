@@ -1,2 +1,3 @@
 # QR-Code-Generator-App
-QR Code Generator App using JavaScript
+
+This system is developed using HTML, CSS and JavaScript
